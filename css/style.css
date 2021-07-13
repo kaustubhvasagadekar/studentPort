@@ -1,3 +1,31 @@
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+};
+
 body {
     background: #eeeeee;
     font-family: 'Varela Round', sans-serif;
@@ -10,7 +38,13 @@ body {
     padding-left: 16px;
     padding-right: 16px;
     border-bottom: 1px solid #d6d6d6;
-    box-shadow: 0 0 50px rgba(0,0,0,.1);
+    box-shadow: 0 0 70px rgba(0,0,0,.1);
+}
+.navbar-state{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .nav img {
     border-radius: 50%;
@@ -61,7 +95,7 @@ body {
 }
 .navbar .navbar-form {
     margin-right: 0;
-    margin-left: 0;
+    margin-left: -20px;
     border: 0;
 }
 @media (min-width: 992px){
@@ -124,5 +158,55 @@ blue {
 
 .navbar img {
     border-radius: 50%;
- 
+
+}
+.tablebl {
+background: black;
+color: white !important;
+opacity: 60%;
+
+}
+.loader{
+    background: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader div{
+    background: #fff;
+    width: 16px;
+    height: 32px;
+    margin-left: 10px;
+    animation: loader 1.2s infinite;
+}
+
+@keyframes loader{
+50%{
+    height: 64px;
+}
+}
+
+.loader div:nth-child(1){
+    background: #FF9F1A;
+    animation-delay: -0.40s;
+}
+.loader div:nth-child(2){
+    background: #fed330;
+    animation-delay: -0.20s;
+}
+.loader div:nth-child(3){
+    background: #fffa65;
+    animation-delay: 0s;
+}
+.footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 100;
+    opacity: 1;
+}
+.space{
+    flex :vh;
 }

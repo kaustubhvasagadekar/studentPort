@@ -153,9 +153,10 @@ iframe {
 [ Utility ]*/
 .txt1 {
   font-family: Poppins-Regular;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.4;
   color: #999999;
+  
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -511,6 +512,9 @@ input.input100 {
     visibility: visible;
     opacity: 1;
   }
+}
+.space{
+  padding-top: 5%;
 }
 
 
